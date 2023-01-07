@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tatai Csilla, Psychologist</title>
+    <style>
+      body {
+        background-color: powderblue;
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        color: navy;
+        text-align: center;
+        animation: header-fadein 2s;
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin: 20px 50px;
+      }
+      img {
+        max-width: 200px;
+        border-radius: 50%;
+        display: block;
+        margin: 20px auto;
+        animation: image-fadein 2s;
+      }
+      form {
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: center;
+        animation: form-fadein 2s;
+      }
+      label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 20px;
+      }
+      input[type="text"], input[type="email"], input[type="tel"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+      }
+      input[type="submit"] {
+        width: 100%;
+        background-color: navy;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      input[type="submit"]:hover {
+        background-color: royalblue;
+      }
+      @keyframes header-fadein {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      @keyframes image-fadein {
+        from { opacity: 0; transform: translateY(-20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes form-fadein {
+        from { opacity: 0; transform: translateY(-20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to Tatai Csilla's Psychotherapy Practice</h1>
+    <img src="tatai_kep.jpg" alt="Picture of Tatai Csilla">
+    <p>Tatai Csilla is a licensed psychologist with over 10 years of experience helping people improve their mental health and well-being. If you are interested in starting therapy with Tatai, please fill out the form below to join the waitlist.</p>
+    <form action="/waitlist" method="post">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name"><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br>
+      <label for="tel">Telephone:</label><br>
+      <input type="tel" id="tel" name="telephone"><br><br>
+      <input type="submit" value="Submit">
+    </form> 
+  </body>
+</html>
